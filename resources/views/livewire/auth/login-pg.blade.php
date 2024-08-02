@@ -1,5 +1,5 @@
-<div class="w-full h-[90%] flex items-center justify-center">
-    <div class="h-4/5 w-[560px] bg-white rounded-md shadow-lg center flex-col gap-y-2 px-4 md:px-16 py-4">
+<div class="w-full h-full center bg-[#EEEEEE]">
+    <div class="h-auto w-[560px] bg-white rounded-md shadow-lg center flex-col gap-y-2 px-4 md:px-16 py-24">
 
         <h1 class="text-3xl font-semibold">Welcome Back</h1>
         <p>Hey, Enter your details to get login</p>

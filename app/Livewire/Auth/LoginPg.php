@@ -45,4 +45,10 @@ class LoginPg extends Component
         $this->addError('email', 'Password Not Match');
 
     }
+    
+    public function boot(){
+        if (auth()->user()) {
+            $this->redirect(route('user.dash'), navigate: true);
+        }
+    }
 }
