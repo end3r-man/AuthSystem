@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{{ $title ?? 'Page Title' }} | AuthSystem</title>
+        <title>{{ $title ?? 'Page Title' }} | Autho </title>
 
         {{-- Tailwind Link --}}
         @vite('resources/css/app.css')
@@ -19,9 +19,6 @@
             {{ $slot }}
 
         </div>
-
-        {{-- Alpine Script --}}
-        <script src="{{asset('assets/js/index.js')}}"></script>
 
         {{-- Iconify CDN --}}
         <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>

@@ -22,6 +22,13 @@ class LoginPg extends Component
         return view('livewire.auth.login-pg');
     }
 
+    /**
+     * HandleLogin
+     * 
+     * @param email string
+     * @param password string
+     * @return void
+     */
     public function HandleLogin() {
         
         $cred = $this->validate([

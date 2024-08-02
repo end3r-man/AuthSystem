@@ -15,10 +15,12 @@ class IsUser
      */
     public function handle(Request $request, Closure $next): Response
     {
+        // Check user is auth
         if (auth()->user()) {
             return $next($request);
         }
         
+        // else return to login
         return redirect(route('auth.login'));
     }
 }

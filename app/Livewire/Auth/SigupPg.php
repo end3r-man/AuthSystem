@@ -22,7 +22,15 @@ class SigupPg extends Component
     {
         return view('livewire.auth.sigup-pg');
     }
-
+    
+    /**
+     * HandleSignup
+     * 
+     * @param name string
+     * @param email string
+     * @param password string
+     * @return void
+     */
     public function HandleSignup()
     {
         $cred = $this->validate([
