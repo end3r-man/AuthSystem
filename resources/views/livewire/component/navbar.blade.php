@@ -9,7 +9,14 @@
     </div>
 
     <div class="w-full h-full hidden md:flex justify-end items-center gap-x-8">
-        <a wire:navigate href="{{route('auth.reg')}}" class="capitalize">Login</a>
+
+        @auth
+        <button wire:click="HandleLogout" class="capitalize">Logout</button>
+        <a wire:navigate href="{{route('user.dash')}}" class="capitalize px-3 py-2 bg-[#EF5A6F] rounded-md text-white">Dashboard</a>
+        @else
+        <a wire:navigate href="{{route('auth.login')}}" class="capitalize">Login</a>
         <a wire:navigate href="{{route('auth.reg')}}" class="capitalize px-3 py-2 bg-[#EF5A6F] rounded-md text-white">Sign Up</a>
+        @endauth
+        
     </div>
 </div>

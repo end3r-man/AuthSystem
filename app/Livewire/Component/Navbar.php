@@ -10,4 +10,11 @@ class Navbar extends Component
     {
         return view('livewire.component.navbar');
     }
+
+    public function HandleLogout()
+    {
+        auth()->logout();
+
+        return $this->redirect(route('auth.login'), navigate: true);
+    }
 }
